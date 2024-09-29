@@ -15,8 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                // Use the full path to python
-                sh '/opt/anaconda3/bin/python app.py'
+                sh '/opt/anaconda3/bin/python app.py &'
             }
         }
     }
